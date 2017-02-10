@@ -65,23 +65,4 @@ Vagrant.configure("2") do |config|
   # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", path: "bootstrap.sh"
-  # config.vm.provision "shell", inline: <<-SHELL
-  #   apt-get install software-properties-common
-  #   add-apt-repository \
-  #      "deb https://apt.dockerproject.org/repo/ \
-  #      ubuntu-$(lsb_release -cs) \
-  #      main"
-  #   apt-get update
-  #   apt-get install -y apache2
-  #   apt-get install -y curl
-  #   apt-get  install -y docker-engine --allow-unauthenticated
-  #   apt-get install -y docker-compose
-  #   apt-get install -y default-jdk
-  #   apt-get install -y nodejs
-
-  #   curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
-  #   chmod +x ./kubectl
-  #   sudo mv ./kubectl /usr/local/bin/kubectl
-    
-  # SHELL
 end

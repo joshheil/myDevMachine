@@ -57,5 +57,6 @@ wget -O /home/vagrant/Downloads/chrome.deb https://dl.google.com/linux/direct/go
 sudo dpkg -i /home/vagrant/Downloads/chrome.deb
 sudo apt-get install -f
 
+#Update launcher to include VS Code and Chrome
 sudo -u vagrant gsettings set com.canonical.Unity.Launcher favorites "['unity://running-apps', 'unity://devices', 'application://code.desktop', 'application://gnome-terminal.desktop', 'application://google-chrome.desktop']"^C
 
