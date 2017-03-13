@@ -32,7 +32,7 @@ apt-get install -y docker-compose
 
 #Install Java
 apt-get install -y default-jdk
-echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java" >> /etc/environment
+echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/" >> /etc/environment
 source /etc/environment
 
 #Install Node
