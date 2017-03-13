@@ -35,6 +35,9 @@ apt-get install -y default-jdk
 echo "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/" >> /etc/environment
 source /etc/environment
 
+#Install Maven
+apt-get install -y maven
+
 #Install Node
 apt-get install -y nodejs
 apt-get install -y nodejs-legacy
